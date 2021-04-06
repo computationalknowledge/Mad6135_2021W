@@ -1,0 +1,21 @@
+let dog = new Object();
+let owner = new Object();
+
+owner.name = "Peter";
+dog.name = "Peanut";
+dog.breed = "Bichon";
+dog.owner = owner;
+// because functions are just OBJECTS,
+// you can compose FUNCTIONS into OBJECTS
+dog.sayHello = function() {
+    return "Bark Bark!!"
+} 
+
+//  console.log(dog);
+console.log(dog.sayHello());
+console.log(dog["breed"]);
+console.log(dog.owner.name);
+
+dog.owner.favoritecolor = "BLUE";
+
+console.log(dog.owner.favoritecolor);
