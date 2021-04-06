@@ -1,0 +1,28 @@
+// Recusion in Java
+// method calls itself
+// why ??
+
+
+public class Recursion{
+	
+		public static void main(String[] args){
+			Orange o = new Orange();
+			System.out.println(o.RecurseMe());
+		}
+}
+
+
+class Orange{
+	// recursion: needs the "base case" condition at which it no longer recurses
+	static int RecursionController = 0;
+
+	public int RecurseMe(){
+	
+		// if I CANNOT use variables scoped at the METHOD LEVEL to control when to jump out of the RECURSION
+		// then what variable can I use
+		RecursionController++;
+		if (RecursionController <= 10) {return this.RecurseMe();}
+		return RecursionController;	
+	}
+
+}
