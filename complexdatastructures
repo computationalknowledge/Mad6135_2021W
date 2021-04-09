@@ -22,3 +22,16 @@ students['C002'] = 'MARY';
 for (var i = 0; i<myArray.length; i++){
     console.log(myArray[i]);
 }
+
+
+// example of chaining map constructions:
+
+let xyz = new Map();
+
+xyz.set('1', 'str1')
+  .set('a', 'num1')
+  .set(true, 'bool1');
+
+var M = xyz.get('a');
+
+console.log(M);  
