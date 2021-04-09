@@ -1,0 +1,24 @@
+var myArray = new Array();
+let map = new Map();
+let students = new Map();
+myArray.push(map);
+myArray.push(students);
+
+map.set('1', 'str1');   // a string key
+map.set(1, 'num1');     // a numeric key
+map.set(true, 'bool1'); // a boolean key
+map.set('1', 'Peanut');   // a string key
+
+//console.log( map.get(1)   ); // 'num1'
+//console.log( map.get('1') ); // 'str1'
+
+//console.log( map.size ); // 3
+
+students.set('C001', 'JOHN');
+students['C002'] = 'MARY';
+//console.log(students.get('C001')); 
+//console.log(students.get('C002')); 
+
+for (var i = 0; i<myArray.length; i++){
+    console.log(myArray[i]);
+}
